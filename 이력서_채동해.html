@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/hello.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>이력서</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 25px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .profile img {
+      width: 180px;
+      height: 172px;
+      object-fit: cover;
+      border: 0px solid #3498db;
+      margin-right: 0px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    th, td {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+    th {
+      background-color: #3498db;
+      color: #fff;
+      width: 110px;
+    }
+    .section-title {
+      background: #ecf0f1;
+      padding: 10px;
+      font-weight: bold;
+      color: #2980b9;
+      text-align: center;
+      margin: 20px 0 10px;
+      border-radius: 6px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      color: #7f8c8d;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>이력서</h1>
+    <div class="profile">
+      <img src="./이력서_채동해_files/ChaeDongHae.jpg" alt="사진">
+      <table>
+        <tbody><tr><th>이름</th><td>채동해</td></tr>
+        <tr><th>생년월일</th><td>2002/11/22</td></tr>
+        <tr><th>이메일</th><td>dh8760@naver.com</td></tr>
+        <tr><th>연락처</th><td>010-7925-8760</td></tr>
+        <tr><th>주소</th><td>인천 서구 원당대로 966</td></tr>
+      </tbody></table>
+    </div>
+
+    <div class="section-title">학력</div>
+    <table>
+      <tbody><tr><th>학교</th><td>한국폴리텍대학 AI융합소프트웨어학과</td></tr>
+      <tr><th>기간</th><td>2025 - 2027</td></tr>
+    </tbody></table>
+
+    <div class="section-title">경력</div>
+    <table>
+      <tbody><tr><th>회사</th><td></td></tr>
+      <tr><th>직무</th><td></td></tr>
+      <tr><th>기간</th><td></td></tr>
+    </tbody></table>
+
+    <div class="section-title">기술</div>
+    <table>
+      <tbody><tr><td>HTML, CSS, JavaScript, C, C++, Python, Git</td></tr>
+    </tbody></table>
+
+    <div class="section-title">자격증</div>
+    <table>
+      <tbody><tr><td>정보처리기사</td></tr>
+      <tr><td>컴퓨터활용능력 1급</td></tr>
+      <tr><td>1종 보통 면허</td></tr>
+    </tbody></table>
+    <div class="section-title">자기소개</div>
+    <table>
+      <tbody><tr><td>근면성실하며 맡은 일에 충성을 다하는 인재입니다.</td></tr>
+    </tbody></table>
+    <div class="footer">감사합니다.</div>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
