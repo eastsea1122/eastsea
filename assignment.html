@@ -15,13 +15,18 @@
       border: 1px solid #ccc;
       border-radius: 6px;
     }
-    input {
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
       width: 100%;
       margin: 5px 0;
       padding: 6px;
     }
-    .small {
+    label {
       font-size: 14px;
+      display: inline-block;
+      margin: 5px 0;
     }
     button {
       margin-top: 10px;
@@ -42,9 +47,11 @@
     <input type="password" placeholder="비밀번호 확인">
     <input type="text" placeholder="이름">
     <input type="email" placeholder="이메일">
-    <label class="small"><input type="checkbox"> 이메일 수신 동의</label>
+
+    <label><input type="checkbox"> 이메일 수신 동의</label><br>
     <input type="tel" placeholder="휴대전화">
-    <label class="small"><input type="checkbox"> SMS 수신 동의</label>
+    <label><input type="checkbox"> SMS 수신 동의</label>
+
     <button>가입하기</button>
   </div>
 </body>
