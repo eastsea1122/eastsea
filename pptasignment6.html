@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .box {
+      width: 300px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 100%;
+      margin: 5px 0;
+      padding: 6px;
+    }
+    label {
+      font-size: 14px;
+      display: inline-block;
+      margin: 5px 0;
+    }
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 8px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showSuccess() {
+      alert("가입이 완료되었습니다!");
+    }
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h3>회원가입</h3>
+    <form onsubmit="showSuccess(); return false;">
+      <input type="text" placeholder="아이디" required>
+      <input type="password" placeholder="비밀번호" required>
+      <input type="password" placeholder="비밀번호 확인" required>
+      <input type="text" placeholder="이름" required>
+      <input type="email" placeholder="이메일" required>
+
+      <label>이메일 수신 동의 <input type="checkbox"></label><br>
+      <input type="tel" placeholder="휴대전화">
+      <label>SMS 수신 동의 <input type="checkbox"></label>
+
+      <button type="submit">가입하기</button>
+    </form>
+  </div>
+</body>
+</html>
