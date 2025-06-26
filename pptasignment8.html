@@ -2,60 +2,32 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>동해 쇼핑몰 입점 / 위탁 / 도매 공급 신청</title>
+  <title>동해 쇼핑몰 입점 신청</title>
 </head>
 <body>
 
-  <h1>동해 쇼핑몰</h1> 
-  <h1>입점 / 위탁 / 도매 공급 신청</h1>
+  <h1>동해 쇼핑몰</h1>
+  <h2>입점 / 위탁 / 도매 공급 신청</h2>
 
-  <form action="submit_form.php" method="post" enctype="multipart/form-data">
-    
-    <p>
-      <label for="type">판매 형태:</label>
-      <select id="type" name="type" required>
-        <option value="">선택하세요</option>
-        <option value="입점">입점</option>
-        <option value="위탁판매">위탁판매</option>
-        <option value="도매공급">도매공급</option>
+  <form>
+    <p>판매 형태: 
+      <select>
+        <option>입점</option>
+        <option>위탁판매</option>
+        <option>도매공급</option>
       </select>
     </p>
 
-    <p>
-      <label for="company">회사명:</label>
-      <input type="text" id="company" name="company" required>
-    </p>
+    <p>회사명: <input type="text"></p>
+    <p>담당자 이름: <input type="text"></p>
+    <p>이메일: <input type="email"></p>
+    <p>연락처: <input type="tel"></p>
+    <p>상품 소개:<br><textarea rows="4" cols="40"></textarea></p>
+    <p>상품 이미지: <input type="file"></p>
+    <p>기타 요청사항:<br><textarea rows="3" cols="40"></textarea></p>
 
-    <p>
-      <label for="name">담당자 이름:</label>
-      <input type="text" id="name" name="name" required>
-    </p>
-
-    <p>
-      <label for="email">이메일:</label>
-      <input type="email" id="email" name="email" required>
-    </p>
-
-    <p>
-      <label for="phone">연락처:</label>
-      <input type="tel" id="phone" name="phone" required>
-    </p>
-
-    <p>
-      <label for="product">판매 상품 소개: (한번에 상품 여러개 신청하셔도 무방합니다)</label><br>
-      <textarea id="product" name="product" rows="4" cols="40"></textarea>
-    </p>
-    <p>
-      <label for="image">상품 이미지 업로드:</label>
-      <input type="file" id="image" name="image">
-    </p>
-    <p>
-      <label for="message">기타 요청사항:</label><br>
-      <textarea id="message" name="message" rows="3" cols="40"></textarea>
-    </p>
-    <p>
-      <button type="submit">신청하기</button>
-    </p>
+    <p><button>신청하기</button></p>
   </form>
+
 </body>
 </html>
